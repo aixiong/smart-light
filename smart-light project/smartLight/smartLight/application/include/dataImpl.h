@@ -1,7 +1,8 @@
 #pragma once
 #include<string>
-#include"json\json.h"
 #include"communication.h"
+#include"../../json/include/json.h"
+
 
 class dataImpl
 {

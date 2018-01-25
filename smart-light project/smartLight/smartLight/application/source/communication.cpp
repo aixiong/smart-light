@@ -1,5 +1,5 @@
-#include "communication.h"
-#include"implCom.h"
+#include"../include/communication.h"
+#include"../include/implCom.h"
 
 communication::communication(std::string ipStr, unsigned portNum):impl(new implCom(ipStr,portNum))
 {

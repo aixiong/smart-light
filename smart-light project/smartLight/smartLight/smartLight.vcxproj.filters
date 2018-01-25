@@ -24,52 +24,52 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="communication.h">
+    <ClInclude Include="json\include\allocator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="implCom.h">
+    <ClInclude Include="json\include\assertions.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\json\allocator.h">
+    <ClInclude Include="json\include\autolink.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\json\assertions.h">
+    <ClInclude Include="json\include\config.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\json\autolink.h">
+    <ClInclude Include="json\include\features.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\json\config.h">
+    <ClInclude Include="json\include\forwards.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\json\features.h">
+    <ClInclude Include="json\include\json.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\json\forwards.h">
+    <ClInclude Include="json\include\json_tool.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\json\json.h">
+    <ClInclude Include="json\include\reader.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\json\reader.h">
+    <ClInclude Include="json\include\value.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\json\value.h">
+    <ClInclude Include="json\include\version.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\json\version.h">
+    <ClInclude Include="json\include\writer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\json\writer.h">
+    <ClInclude Include="application\include\communication.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\lib_json\json_tool.h">
+    <ClInclude Include="application\include\dataImpl.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="dataProcessor.h">
+    <ClInclude Include="application\include\dataprocessor.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="dataImpl.h">
+    <ClInclude Include="application\include\implCom.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -77,33 +77,33 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="网络通信.cpp">
+    <ClCompile Include="json\lib_json\json_reader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="communication.cpp">
+    <ClCompile Include="json\lib_json\json_value.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="implCom.cpp">
+    <ClCompile Include="json\lib_json\json_writer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\lib_json\json_reader.cpp">
+    <ClCompile Include="smartLight.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\lib_json\json_value.cpp">
+    <ClCompile Include="application\source\communication.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\lib_json\json_writer.cpp">
+    <ClCompile Include="application\source\implCom.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="dataProcessor.cpp">
+    <ClCompile Include="application\source\dataProcessor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="dataImpl.cpp">
+    <ClCompile Include="application\source\dataImpl.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\lib_json\json_valueiterator.inl">
+    <None Include="json\lib_json\json_valueiterator.inl">
       <Filter>头文件</Filter>
     </None>
   </ItemGroup>

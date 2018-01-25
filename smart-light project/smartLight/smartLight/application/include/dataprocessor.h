@@ -1,6 +1,6 @@
 #pragma once
 #include<memory>
-
+#include<string>
 class dataImpl;
 
 class dataProcessor

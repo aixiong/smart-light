@@ -13,7 +13,7 @@
 /* This executable is used for testing parser/writer using real JSON files.
  */
 
-#include<json\json.h>
+#include"../include/json.h"
 #include <algorithm> // sort
 #include <sstream>
 #include <stdio.h>

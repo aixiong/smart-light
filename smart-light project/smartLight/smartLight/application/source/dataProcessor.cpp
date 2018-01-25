@@ -1,7 +1,7 @@
-#include"json\json.h"
+#include"../../json/include/json.h"
 #include<string>
-#include "dataProcessor.h"
-#include"dataImpl.h"
+#include "../include/dataProcessor.h"
+#include"../include/dataImpl.h"
 
 dataProcessor::dataProcessor()
 {
