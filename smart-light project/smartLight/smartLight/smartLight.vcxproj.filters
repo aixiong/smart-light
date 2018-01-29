@@ -69,7 +69,7 @@
     <ClInclude Include="application\include\dataprocessor.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="application\include\implCom.h">
+    <ClInclude Include="application\include\comImpl.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -92,13 +92,13 @@
     <ClCompile Include="application\source\communication.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="application\source\implCom.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="application\source\dataProcessor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="application\source\dataImpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="application\source\comImpl.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

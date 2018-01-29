@@ -145,7 +145,7 @@
     <ClInclude Include="application\include\communication.h" />
     <ClInclude Include="application\include\dataImpl.h" />
     <ClInclude Include="application\include\dataprocessor.h" />
-    <ClInclude Include="application\include\implCom.h" />
+    <ClInclude Include="application\include\comImpl.h" />
     <ClInclude Include="json\include\allocator.h" />
     <ClInclude Include="json\include\assertions.h" />
     <ClInclude Include="json\include\autolink.h" />
@@ -165,7 +165,7 @@
     <ClCompile Include="application\source\communication.cpp" />
     <ClCompile Include="application\source\dataImpl.cpp" />
     <ClCompile Include="application\source\dataProcessor.cpp" />
-    <ClCompile Include="application\source\implCom.cpp" />
+    <ClCompile Include="application\source\comImpl.cpp" />
     <ClCompile Include="json\lib_json\json_reader.cpp" />
     <ClCompile Include="json\lib_json\json_value.cpp" />
     <ClCompile Include="json\lib_json\json_writer.cpp" />

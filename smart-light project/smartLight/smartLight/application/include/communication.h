@@ -2,7 +2,7 @@
 #include<memory>
 #include<string>
 
-class implCom;
+class comImpl;
 
 class communication
 {
@@ -12,7 +12,7 @@ public:
 	bool sendString(const std::string& content);
 	bool recvString(std::string& content);
 private:
-	std::shared_ptr<implCom> impl;
+	std::shared_ptr<comImpl> impl;
 };
 
 struct connectFailure

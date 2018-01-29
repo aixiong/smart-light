@@ -1,7 +1,7 @@
 #include"../include/communication.h"
-#include"../include/implCom.h"
+#include"../include/comImpl.h"
 
-communication::communication(std::string ipStr, unsigned portNum):impl(new implCom(ipStr,portNum))
+communication::communication(std::string ipStr, unsigned portNum):impl(new comImpl(ipStr,portNum))
 {
 }
 
