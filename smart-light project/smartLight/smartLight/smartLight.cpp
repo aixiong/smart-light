@@ -2,12 +2,14 @@
 //
 
 #include "stdafx.h"
-#include"application\include\dataProcessor.h"
+#include<iostream>
+#include"application\include\serailport.h"
+using namespace std;
 
 int main()
 {
-	dataProcessor one;
-	one.putPower(0);
+
+	system("pause");
     return 0;
 }
 

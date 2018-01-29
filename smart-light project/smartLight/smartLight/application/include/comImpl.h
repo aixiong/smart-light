@@ -21,7 +21,7 @@ public:
 	bool connectServer();
 	unsigned sendString(const std::string& str);
 	std::string recvString();
-	bool isConnected()
+	bool isConnected() const
 	{
 		return connected;
 	}

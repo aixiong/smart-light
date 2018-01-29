@@ -30,7 +30,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -143,9 +143,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application\include\communication.h" />
+    <ClInclude Include="application\include\com_class.h" />
     <ClInclude Include="application\include\dataImpl.h" />
     <ClInclude Include="application\include\dataprocessor.h" />
     <ClInclude Include="application\include\comImpl.h" />
+    <ClInclude Include="application\include\serailImpl.h" />
+    <ClInclude Include="application\include\serailport.h" />
     <ClInclude Include="json\include\allocator.h" />
     <ClInclude Include="json\include\assertions.h" />
     <ClInclude Include="json\include\autolink.h" />
@@ -166,6 +169,8 @@
     <ClCompile Include="application\source\dataImpl.cpp" />
     <ClCompile Include="application\source\dataProcessor.cpp" />
     <ClCompile Include="application\source\comImpl.cpp" />
+    <ClCompile Include="application\source\serailImpl.cpp" />
+    <ClCompile Include="application\source\serailport.cpp" />
     <ClCompile Include="json\lib_json\json_reader.cpp" />
     <ClCompile Include="json\lib_json\json_value.cpp" />
     <ClCompile Include="json\lib_json\json_writer.cpp" />
