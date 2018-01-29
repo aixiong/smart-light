@@ -33,13 +33,17 @@ int serailImpl::sendString(const std::string & str)
 int serailImpl::recvString(std::string & str)
 {
 	openCheck();
-	char buff[1024] = { 0 };
-	int num=impl->read(buff,sizeof(buff)/sizeof(char));
+	char buff[128] = { 0 };
+	int num=impl->read(buff,sizeof(buff)/sizeof(char)-1);
 	str = buff;
 	return num;
 }
 
 void serailImpl::openCheck()
 {
-	if (!opened)impl->open(comName, baudRate);
+	if (!opened)
+	{
+		impl->open(comName, baudRate);
+		opened = true;
+	}
 }
