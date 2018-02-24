@@ -4,39 +4,40 @@
 #include "stdafx.h"
 #include<iostream>
 #include<future>
+#include"application\include\dataprocessor.h"
 #include"application\include\serailport.h"
 using namespace std;
-serailport one(4, 115200);
-serailport two(3, 115200);
 
-void send()
-{
-	string str;
-	cin >> str;
-	one.sendCommand(str);
-}
-
-void recv()
-{
-	string str;
-	
-	if(two.recvCommand(str))
-	{
-		printf("%s", str.data());
-	}
-}
+bool status = false;
 
 int main()
 {
-	/*future<void> f1 = async(send);
-	future<void> f2 = async(recv);*/
+	dataProcessor tool;
 	while (true)
 	{
-		send();
-		//recv();
-		_sleep(100);
+		if (status != tool.getSwitch())
+		{
+			status = !status;
+			if (status)
+			{
+				cout << "turn on the light." << endl;
+			}
+			else
+			{
+				cout << "turn off the light." << endl;
+			}
+		}
+		if (status)
+		{
+			tool.putPower(20);
+		}
+		else
+		{
+			tool.putPower(0);
+		}
+		_sleep(1000);
 	}
-	//system("pause");
+	system("pause");
     return 0;
 }
 
